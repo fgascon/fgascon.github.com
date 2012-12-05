@@ -1,4 +1,4 @@
-Prose Bootstrap
+www.fgascon.com
 =================
 
-A minimal template to get started with Jekyll and Prose.
+FGascon Blog.
