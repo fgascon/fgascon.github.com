@@ -3,6 +3,18 @@ body {
 	padding-bottom: 40px;
 }
 
+.masthead h3 {
+	float: left;
+	color: #999;
+}
+
+.masthead p{
+	float: right;
+	width: 350px;
+	color: #555;
+	font-style: italic;
+}
+
 /* Custom container */
 .container-narrow {
 	margin: 0 auto;
