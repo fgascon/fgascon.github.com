@@ -46,14 +46,34 @@
 						have an ATmega microprocessor and Pololu stepper drivers. A already have an Arduino Uno which is based on an
 						ATmega328, so I decided to base my electronic on this microprocessor. The problem is most RepRap electronic
 						is based on an ATmega1284 or an ATmega2560. The main differences with the ATmega328 is that it is has less memory
-						and less I/O pins. According to many people the memory part is not an issue. For the I/O pins what it means is
-						that it probably won't support dual extrusion or a heat bed.
+						and less I/O pins. According to many people the memory part is not an issue (depending on what firmware you use).
+						For the I/O pins, what it means is that it probably won't support dual extrusion or a heat bed. But that won't
+						be an issue either because my RepRap don't have neither of these right now.
 					</p>
 					<p>
 						So I based my electronic on the <a href="http://reprap.org/wiki/RAMPS_1.4">RAMPS v1.4</a>, but I didn't kept
-						their board layout.
+						their board layout. I separated the board into 3 smaller boards. Two of them are for the motor drivers and the
+						other one is for the heater and thermistor control. Making them in to separate board will allow me to expand the
+						capacities by adding other boards. I can for example add a heater and thermistor board and a motor driver board
+						to add a second extruder.
 					</p>
-					<p>Rest comming soon...</p>
+					<p>
+						I only made one the motor driver board so far. The second one will be identical to first one. Here is how it
+						look right now.
+					</p>
+					<p>
+						<a href="http://cdn.fgascon.com/photos/reprap/reprap-pololu-11.jpg" target="_blank">
+							<img src="http://cdn.fgascon.com/photos/reprap/reprap-pololu-11_small.jpg" width="359" height="480">
+						</a>
+					</p>
+					<p>
+						<a href="http://cdn.fgascon.com/photos/reprap/reprap-pololu-10.jpg" target="_blank">
+							<img src="http://cdn.fgascon.com/photos/reprap/reprap-pololu-10_small.jpg" width="480" height="359">
+						</a>
+					</p>
+					<p>
+						The board can control two stepper motors. It's missing some screw terminals for the motors.
+					</p>
 				</div>
 			</article>
 			<hr>
