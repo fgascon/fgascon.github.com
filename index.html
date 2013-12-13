@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 layout: default
 ---
@@ -23,4 +24,125 @@ layout: default
     </div>
   </div>
 {% endfor %}
+=======
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>FGascon/blog</title>
+		<meta name="author" content="Frédéric Gascon">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/css/bootstrap.min.css">
+		<link rel="stylesheet" href="/style/style.css">
+		
+		<script>
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-36852703-1']);
+			_gaq.push(['_setDomainName', 'fgascon.com']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+	</head>
+	<body>
+		<div class="container">
+>>>>>>> master
 
+			<div class="masthead clearfix">
+				<div class="description pull-right">
+					I my name is Frédéric Gascon. I am a full stack Web developer based in Montréal with a special interest for
+					front-end development. I am a <a href="http://nodejs.org/" target="_blank">Node.js</a> enthusiast. I also hack
+					with electronic in my free time.
+				</div>
+				<h3 class="text-muted">FGascon/blog</h3>
+			</div>
+			<hr>
+			
+			<article>
+				<header>
+					<div class="date pull-right">August 11, 2013</div>
+					<h1>RepRap - Electronics</h1>
+				</header>
+				<div class="body">
+					<p>
+						I've been working for a while on building a 3D printer. I'm building de
+						<a href="http://reprap.org/wiki/Prusa_Mendel_(iteration_2)">Prusa Mendel</a> from the RepRap
+						project. When it come to the electronic you have a lot of options. But most of them are pretty similar. They
+						have an ATmega microprocessor and Pololu stepper drivers. A already have an Arduino Uno which is based on an
+						ATmega328, so I decided to base my electronic on this microprocessor. The problem is most RepRap electronic
+						is based on an ATmega1284 or an ATmega2560. The main differences with the ATmega328 is that it is has less memory
+						and less I/O pins. According to many people the memory part is not an issue (depending on what firmware you use).
+						For the I/O pins, what it means is that it probably won't support dual extrusion or a heat bed. But that won't
+						be an issue either because my RepRap don't have neither of these right now.
+					</p>
+					<p>
+						So I based my electronic on the <a href="http://reprap.org/wiki/RAMPS_1.4">RAMPS v1.4</a>, but I didn't kept
+						their board layout. I separated the board into 3 smaller boards. Two of them are for the motor drivers and the
+						other one is for the heater and thermistor control. Making them in to separate board will allow me to expand the
+						capacities by adding other boards. I can for example add a heater and thermistor board and a motor driver board
+						to add a second extruder.
+					</p>
+					<p>
+						I only made one the motor driver board so far. The second one will be identical to first one. Here is how it
+						look right now.
+					</p>
+					<p>
+						<a href="http://cdn.fgascon.com/photos/reprap/reprap-pololu-11.jpg" target="_blank">
+							<img src="http://cdn.fgascon.com/photos/reprap/reprap-pololu-11_small.jpg" width="359" height="480">
+						</a>
+					</p>
+					<p>
+						<a href="http://cdn.fgascon.com/photos/reprap/reprap-pololu-10.jpg" target="_blank">
+							<img src="http://cdn.fgascon.com/photos/reprap/reprap-pololu-10_small.jpg" width="480" height="359">
+						</a>
+					</p>
+					<p>
+						The board can control two stepper motors. It's missing some screw terminals for the motors and the second Pololu
+						controler on the photo.
+					</p>
+				</div>
+			</article>
+			<hr>
+			
+			<article>
+				<header>
+					<div class="date pull-right">December 5, 2012</div>
+					<h1>Temporary blog system</h1>
+				</header>
+				<div class="body">
+					<p>
+						I started to create a publishing system based on node.js. It's a static site generator. But unlike most
+						of the static site generator, it's intended to be used not only by geeks but by any Web publisher. It doesn't
+						have a name yet, I call it web-writer for now. I'll make it public on GitHub as soon has I have something
+						functional.
+					</p>
+					<p>
+						Since I want a blog right now and the web-writer isn't ready yet, I just wrote this blog in plain HTML using
+						<a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter's Bootstrap</a> and hosted it using
+						<a href="http://pages.github.com/" target="_blank">GitHub Pages</a>. At the same time, I hope that starting to
+						publish content myself will help me understand better what my publishing system should be.
+					</p>
+					<p>
+						The blog code is hosted at <a href="https://github.com/fgascon/fgascon.github.com">github.com/fgascon/fgascon.github.com</a>.
+					</p>
+				</div>
+			</article>
+			<hr>
+			
+			<div class="footer">
+				<ul class="nav nav-pills pull-right">
+					<li class="active"><a href="/">blog</a></li>
+					<li><a href="http://home-control.fgascon.com">Home Control</a></li>
+					<li><a href="https://github.com/fgascon">on GitHub</a></li>
+				</ul>
+				<p>FGascon</p>
+			</div>
+		</div>
+		
+		<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+	</body>
+</html>
